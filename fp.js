@@ -2,7 +2,7 @@
 // @name         Cleaner Foreign Policy
 // @namespace    http://tampermonkey.net/
 // @version      2.1
-// @description  try to take over the world!
+// @description  tone down styling and remove cruft
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://foreignpolicy.com/*
