@@ -1,3 +1,3 @@
 #!/bin/sh
 SITE=userscripts.kemitchell.com
-rsync --quiet -avr --exclude .git --delete . $SITE:/var/www/$SITE
+rsync --quiet -avr --exclude deploy --exclude .git --delete . $SITE:/var/www/$SITE
