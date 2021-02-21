@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         Cleaner Foreign Affairs
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  remove cruft
 // @author       Kyle E. Mitchell
+// @homepage     https://userscripts.kemitchell.com
 // @match        https://foreignaffairs.com/*
 // @grant        BlueOak-1.0.0
 // @updateURL    https://userscripts.kemitchell.com/fa.js
