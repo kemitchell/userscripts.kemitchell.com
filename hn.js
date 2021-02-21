@@ -6,6 +6,7 @@
 // @author       Kyle E. Mitchell
 // @match        https://news.ycombinator.com/*
 // @grant        BlueOak-1.0.0
+// @updateURL    https://userscripts.kemitchell.com/hn.js
 // ==/UserScript==
 
 // Remove user score.
