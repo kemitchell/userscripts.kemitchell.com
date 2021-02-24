@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Cleaner Foreign Policy
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @description  tone down styling and remove cruft
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -22,5 +22,10 @@ document.querySelectorAll('.bolded-first-line').forEach(e => {
 
 // Remove Read More sections.
 document.querySelectorAll('.fp-related-wrapper').forEach(e => {
+  e.parentNode.removeChild(e)
+})
+
+// Remove pull quotes.
+document.querySelectorAll('.pull-quote').forEach(e => {
   e.parentNode.removeChild(e)
 })
