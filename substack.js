@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Substack Trimmer
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      3.0
 // @description  remove header images and other content from Substack posts
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -11,6 +11,11 @@
 // ==/UserScript==
 
 setTimeout(() => {
+  // Remove top banner.
+  document.querySelectorAll('.main-menu').forEach(e => {
+    e.parentNode.removeChild(e)
+  })
+
   // Remove images at tops of pages.
   document.querySelectorAll('.body .captioned-image-container:first-child').forEach(e => {
     e.parentNode.removeChild(e)
