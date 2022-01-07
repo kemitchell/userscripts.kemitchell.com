@@ -10,6 +10,13 @@
 // @updateURL    https://userscripts.kemitchell.com/substack.js
 // ==/UserScript==
 
-// Remove post footers.
-const postFooter = document.querySelector('.post-footer')
-postFooter.parentNode.removeChild(postFooter)
+const toRemove = [
+  '.post-footer',
+  '.main-menu'
+]
+for (const selector of toRemove) {
+  const elements = document.querySelectorAll(selector)
+  for (const element of Array.from(elements)) {
+    element.parentNode.removeChild(element)
+  }
+}
