@@ -11,7 +11,9 @@
 // ==/UserScript==
 
 const toRemove = [
-  '.post-footer',
+  '.post-footer', // social media &c.
+  '.footer-wrap',
+  '.single-post-section', // comments and recommendations
   '.main-menu'
 ]
 for (const selector of toRemove) {
