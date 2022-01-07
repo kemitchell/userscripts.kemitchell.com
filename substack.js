@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Substack
 // @namespace    http://tampermonkey.net/
-// @version      4
+// @version      5
 // @description  remove various cruft from Substack pages
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -10,17 +10,16 @@
 // @updateURL    https://userscripts.kemitchell.com/substack.js
 // ==/UserScript==
 
-setTimeout(() => {
-  const toRemove = [
-    '.post-footer', // social media &c.
-    '.footer-wrap',
-    '.single-post-section', // comments and recommendations
-    '.main-menu'
-  ]
-  for (const selector of toRemove) {
-    const elements = document.querySelectorAll(selector)
-    for (const element of Array.from(elements)) {
-      element.parentNode.removeChild(element)
-    }
+const toRemove = [
+  '.post-footer', // social media &c.
+  '.footer-wrap',
+  '.single-post-section', // comments and recommendations
+  '.main-menu'
+]
+
+for (const selector of toRemove) {
+  const elements = document.querySelectorAll(selector)
+  for (const element of Array.from(elements)) {
+    element.parentNode.removeChild(element)
   }
-}, 3000)
+}
