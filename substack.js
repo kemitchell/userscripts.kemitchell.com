@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Substack
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      3
 // @description  remove various cruft from Substack pages
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
