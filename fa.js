@@ -11,9 +11,11 @@
 // ==/UserScript==
 
 // Remove "Stay informed" ads.
-document.querySelectorAll('.article-newsletter-signup--container').forEach(e => {
-  e.parentNode.removeChild(e)
-})
+document
+  .querySelectorAll('.article-newsletter-signup--container')
+  .forEach((e) => {
+    e.parentNode.removeChild(e)
+  })
 
 // Dismiss cookie notice.
 try {

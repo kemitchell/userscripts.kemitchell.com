@@ -28,4 +28,4 @@ try {
 }
 
 // Remove post scores.
-document.querySelectorAll('.score').forEach(e => e.parentNode.removeChild(e))
+document.querySelectorAll('.score').forEach((e) => e.parentNode.removeChild(e))

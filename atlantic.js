@@ -13,7 +13,7 @@ setTimeout(() => {
   console.log('streamlining...')
   for (const selector of [
     '[class*=injected-recirculation-link-]',
-    '[class*=ArticleBentoRecirc]'
+    '[class*=ArticleBentoRecirc]',
   ]) {
     for (const element of Array.from(document.querySelectorAll(selector))) {
       element.parentNode.removeChild(element)

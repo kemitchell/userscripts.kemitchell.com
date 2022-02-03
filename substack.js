@@ -16,7 +16,7 @@ const toRemove = [
   '.footer-wrap',
   '.single-post-section', // comments and recommendations
   '.container ~ div',
-  '.main-menu'
+  '.main-menu',
 ]
 
 for (const selector of toRemove) {

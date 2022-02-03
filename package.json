@@ -1,10 +1,19 @@
 {
   "public": false,
   "devDependencies": {
-    "standard": "^16.0.3"
+    "prettier": "^2.5.1"
+  },
+  "prettier": {
+    "excludeFiles": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true
   },
   "scripts": {
-    "lint": "standard",
-    "fix": "standard --fix"
+    "lint": "prettier .",
+    "fix": "prettier -w ."
   }
 }

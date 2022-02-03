@@ -18,7 +18,7 @@ const selectors = [
   '.article-footer',
   '.site-footer',
   '[class*=section-actions]',
-  '[class*=promo-]'
+  '[class*=promo-]',
 ]
 
 for (const selector of selectors) {

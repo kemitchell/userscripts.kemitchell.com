@@ -15,4 +15,4 @@ const link = document.querySelector('a[href="/settings"]')
 link.innerText = 'Settings'
 
 // Remove post scores.
-document.querySelectorAll('.score').forEach(e => e.parentNode.removeChild(e))
+document.querySelectorAll('.score').forEach((e) => e.parentNode.removeChild(e))

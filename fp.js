@@ -11,21 +11,21 @@
 // ==/UserScript==
 
 // Remove thick HR styling.
-document.querySelectorAll('.thick-horizontal-rule').forEach(e => {
+document.querySelectorAll('.thick-horizontal-rule').forEach((e) => {
   e.className = ''
 })
 
 // Remove bold first line styling.
-document.querySelectorAll('.bolded-first-line').forEach(e => {
+document.querySelectorAll('.bolded-first-line').forEach((e) => {
   e.className = ''
 })
 
 // Remove Read More sections.
-document.querySelectorAll('.fp-related-wrapper').forEach(e => {
+document.querySelectorAll('.fp-related-wrapper').forEach((e) => {
   e.parentNode.removeChild(e)
 })
 
 // Remove pull quotes.
-document.querySelectorAll('.pull-quote').forEach(e => {
+document.querySelectorAll('.pull-quote').forEach((e) => {
   e.parentNode.removeChild(e)
 })

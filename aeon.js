@@ -18,7 +18,7 @@ for (const selector of [
   '[class*=AppendixContainer]',
   'header img',
   '[class*=Thumbnail] img',
-  '.pullquote'
+  '.pullquote',
 ]) {
   for (const element of Array.from(document.querySelectorAll(selector))) {
     element.parentNode.removeChild(element)
