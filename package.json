@@ -4,10 +4,6 @@
     "prettier": "^2.5.1"
   },
   "prettier": {
-    "excludeFiles": [
-      "package.json",
-      "package-lock.json"
-    ],
     "trailingComma": "es5",
     "semi": false,
     "singleQuote": true
