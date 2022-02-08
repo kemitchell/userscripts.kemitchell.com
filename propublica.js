@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline ProPublica
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  remove promo and other cruft
 // @author       Kyle E. Mitchell
 // @match        https://www.propublica.org/article/*
@@ -18,6 +18,7 @@ const selectors = [
   '.article-footer',
   '.site-footer',
   '.bb-image',
+  '.bb-callout',
   '[class*=section-actions]',
   '[class*=promo-]',
 ]
