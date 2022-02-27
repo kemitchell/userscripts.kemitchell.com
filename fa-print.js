@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Cleaner Foreign Affairs Printing
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  fix type, etc.
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
-// @match        https://foreignaffairs.com/print/*
+// @match        https://foreignaffairs.com/print/node/*
 // @grant        BlueOak-1.0.0
 // @updateURL    https://userscripts.kemitchell.com/fa-print.js
 // ==/UserScript==
