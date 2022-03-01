@@ -18,6 +18,7 @@ for (const stylesheet of document.styleSheets) {
       text.includes('.article-dropcap') &&
       text.includes('font-size') &&
       text.includes('1.4rem')
-    ) stylesheet.deleteRule(ruleIndex)
+    )
+      stylesheet.deleteRule(ruleIndex)
   }
 }

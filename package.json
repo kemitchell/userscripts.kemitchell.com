@@ -9,7 +9,7 @@
     "singleQuote": true
   },
   "scripts": {
-    "lint": "prettier .",
+    "lint": "prettier -c .",
     "fix": "prettier -w ."
   }
 }
