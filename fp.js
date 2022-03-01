@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Cleaner Foreign Policy
 // @namespace    http://tampermonkey.net/
-// @version      4.0
+// @version      4.1
 // @description  tone down styling and remove cruft
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -10,22 +10,21 @@
 // @updateURL    https://userscripts.kemitchell.com/fp.js
 // ==/UserScript==
 
-// Remove thick HR styling.
-document.querySelectorAll('.thick-horizontal-rule').forEach((e) => {
-  e.className = ''
-})
+for (const selector of [
+  '.editors-note-in-post--v2',
+  '.pull-quote',
+  '.fp-related-wrapper'
+]) {
+  for (const element of Array.from(document.querySelectorAll(selector))) {
+    element.parentNode.removeChild(element)
+  }
+}
 
-// Remove bold first line styling.
-document.querySelectorAll('.bolded-first-line').forEach((e) => {
-  e.className = ''
-})
-
-// Remove Read More sections.
-document.querySelectorAll('.fp-related-wrapper').forEach((e) => {
-  e.parentNode.removeChild(e)
-})
-
-// Remove pull quotes.
-document.querySelectorAll('.pull-quote').forEach((e) => {
-  e.parentNode.removeChild(e)
-})
+for (const selector of [
+  '.bolded-first-line', // bold first line
+  '.thick-horizontal-rule' // thick <HR>
+]) {
+  document.querySelectorAll(selector).forEach(e => {
+    e.className = ''
+  })
+}
