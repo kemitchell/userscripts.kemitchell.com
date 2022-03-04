@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline The Atlantic
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @match        https://www.theatlantic.com/*
@@ -14,6 +14,7 @@ setTimeout(() => {
   for (const selector of [
     '[class*=injected-recirculation-link-]',
     '[class*=ArticleBentoRecirc]',
+    '[class*=ArticleRelatedContentLink]',
   ]) {
     for (const element of Array.from(document.querySelectorAll(selector))) {
       element.parentNode.removeChild(element)
