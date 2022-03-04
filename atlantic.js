@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline The Atlantic
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      0.7
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @match        https://www.theatlantic.com/*
@@ -16,7 +16,7 @@ setTimeout(() => {
     '[class*=ArticleRelatedContentModule]',
     '[class*=ArticleMostPopular]',
     '[class*=SubOnlyPromo]',
-    '[class*=ArticleLeadFigure_media]',
+    '[class*=ArticleLeadArt]',
     '[class*=ArticleRelatedContentLink]',
   ]) {
     for (const element of Array.from(document.querySelectorAll(selector))) {
