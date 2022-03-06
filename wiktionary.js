@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Wiktionary
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -19,8 +19,8 @@ for (const selector of [
 }
 
 const table = document.querySelector('.morfotable')
-table.styles.float = 'none'
-table.styles.clear = 'none'
+table.style.float = 'none'
+table.style.clear = 'none'
 for (const side of ['Left', 'Right', 'Top', 'Bottom']) {
-  table.styles[`margin${side}`] = 0
+  table.style[`margin${side}`] = 0
 }
