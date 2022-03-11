@@ -10,9 +10,7 @@
 // @updateURL    https://userscripts.kemitchell.com/wiktionary.js
 // ==/UserScript==
 
-for (const selector of [
-  '#toc',
-]) {
+for (const selector of ['#toc']) {
   for (const element of Array.from(document.querySelectorAll(selector))) {
     element.parentNode.removeChild(element)
   }

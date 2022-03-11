@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Cleaner Foreign Affairs Printing
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  fix type, etc.
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -22,3 +22,6 @@ for (const stylesheet of document.styleSheets) {
       stylesheet.deleteRule(ruleIndex)
   }
 }
+
+const footer = document.querySelector('.print-footer')
+footer.parentNode.removeChild(footer)
