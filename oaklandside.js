@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Oaklandside
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @match        https://oaklandside.org/*
@@ -26,3 +26,7 @@ for (const selector of selectors) {
     element.parentNode.removeChild(element)
   }
 }
+
+const main = document.querySelector('.main-content')
+main.style.width = '100%'
+main.style.color = 'black !important'
