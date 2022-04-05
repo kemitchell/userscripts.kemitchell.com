@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         Streamline Холод
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://holod.media/20*/**/*
 // @grant        BlueOak-1.0.0
 // @updateURL    https://userscripts.kemitchell.com/holod.js
+// @run-at       document-idle
 // ==/UserScript==
 
 for (const selector of [
