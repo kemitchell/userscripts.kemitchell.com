@@ -12,10 +12,11 @@
 // ==/UserScript==
 
 for (const selector of [
-  '*[role=complementary]',
-  '#site-index',
-  'footer[role=contentinfo]',
   '#in-story-masthead',
+  '#site-index',
+  '*[aria-hidden=true]',
+  '*[role=complementary]',
+  'footer[role=contentinfo]',
 ]) {
   for (const element of Array.from(document.querySelectorAll(selector))) {
     element.parentNode.removeChild(element)
