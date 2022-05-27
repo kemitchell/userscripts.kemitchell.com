@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         Streamline Медуза
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
-// @match        https://meduza/*
+// @include      https://meduza/*
 // @grant        BlueOak-1.0.0
 // @updateURL    https://userscripts.kemitchell.com/meduza.js
+// @downloadURL  https://userscripts.kemitchell.com/meduza.js
 // @run-at       document-idle
 // ==/UserScript==
 
