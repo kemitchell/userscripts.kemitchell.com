@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Aeon.co
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -11,7 +11,6 @@
 // ==/UserScript==
 
 for (const selector of [
-  '[class*=BannerWrapper]',
   '[class*=SupportBar]',
   '[class*=HideOnPrint]',
   '[class*=Footer]',
