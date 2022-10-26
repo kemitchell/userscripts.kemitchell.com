@@ -6,7 +6,6 @@
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://www.oed.com/*
-// @downloadURL  https://userscripts.kemitchell.com/oed-login.js
 // ==/UserScript==
 
 document.addEventListener('DOMContentLoaded', () => {
