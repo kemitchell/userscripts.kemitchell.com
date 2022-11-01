@@ -9,14 +9,17 @@
 // ==/UserScript==
 
 document.addEventListener('DOMContentLoaded', () => {
+  // The user name input.
   const user = document.getElementById('subLoginUsername')
+  // The password input.
   const password = document.getElementById('subLoginPassword')
   if (
-    user &&
-    user.value !== '' &&
-    password &&
-    password.value !== ''
+    user && // user input present
+    user.value !== '' && // automatically filled
+    password && // password input present
+    password.value !== '' // automatically filled
   ) {
+    // Click the login button.
     const submitButton = document.querySelector('#loginBar input[type=submit]')
     submitButton.click()
   }
