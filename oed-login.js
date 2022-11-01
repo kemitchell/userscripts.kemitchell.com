@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OED Automatic Login
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  automatically click "Sign In"
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 document.addEventListener('DOMContentLoaded', () => {
-  const user = document.getElementById('subLoginUsename')
+  const user = document.getElementById('subLoginUsername')
   const password = document.getElementById('subLoginPassword')
   if (
     user &&
