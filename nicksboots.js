@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nicks Boots
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -12,8 +12,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const selectors = [
-    '.page-wrapper > div.page-main',
-    '.page-wrapper .category-view'
+    'div.page-main',
+    '.category-view'
   ]
 
   for (const selector of selectors) {
