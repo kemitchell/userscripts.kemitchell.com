@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nicks Boots
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -10,11 +10,13 @@
 // @updateURL    https://userscripts.kemitchell.com/nicksboots.js
 // ==/UserScript==
 
-const selectors = [
-  '.page-wrapper > div.page-main',
-  '.page-wrapper .category-view'
-]
+document.addEventListener('DOMContentLoaded', () => {
+  const selectors = [
+    '.page-wrapper > div.page-main',
+    '.page-wrapper .category-view'
+  ]
 
-for (const selector of selectors) {
-  document.querySelectorAll(selector).forEach(e => e.parentNode.removeChild(e))
-}
+  for (const selector of selectors) {
+    document.querySelectorAll(selector).forEach(e => e.parentNode.removeChild(e))
+  }
+})
