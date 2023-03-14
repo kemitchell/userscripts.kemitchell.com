@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nicks Boots
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -16,7 +16,5 @@ const selectors = [
 ]
 
 for (const selector of selectors) {
-  for (const element of Array.from(document.querySelectorAll(selector))) {
-    element.parentNode.removeChild(element)
-  }
+  document.querySelectorAll(selector).forEach(e => e.parentNode.removeChild(e))
 }
