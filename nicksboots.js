@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Nicks Boots
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://nicksboots.com/shop/shop-all-boots/*
 // @grant        BlueOak-1.0.0
-// @updateURL    https://userscripts.kemitchell.com/nicksboots.js
+// @downloadURL  https://userscripts.kemitchell.com/nicksboots.js
 // ==/UserScript==
 
 document.addEventListener('DOMContentLoaded', () => {
