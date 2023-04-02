@@ -6,7 +6,6 @@
 // @author       Kyle E. Mitchell
 // @match        https://www.propublica.org/article/*
 // @grant        BlueOak-1.0.0
-// @updateURL    https://userscripts.kemitchell.com/propublica.js
 // ==/UserScript==
 
 const selectors = [
