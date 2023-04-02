@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Reddit
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @description  remove scores and other cruft from Reddit
 // @author       Kyle E. Mitchell
 // @match        https://*.reddit.com/*
@@ -13,8 +13,5 @@ const selectors = [
 ]
 
 for (const selector of selectors) {
-  const elements = Array.from(document.querySelectorAll(selector))
-  for (const element of elements) {
-    element.parentNode.removeChild(element)
-  }
+  document.querySelectorAll(selector).forEach(e => e.parentNode.removeChild(e))
 }
