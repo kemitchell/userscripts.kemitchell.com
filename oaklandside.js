@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         Streamline Oaklandside
 // @namespace    http://tampermonkey.net/
-// @version      0.7
+// @version      0.8
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @match        https://oaklandside.org/20*/*
 // @grant        BlueOak-1.0.0
-// @updateURL    https://userscripts.kemitchell.com/oaklandside.js
 // ==/UserScript==
 
 const selectors = [
@@ -18,7 +17,7 @@ const selectors = [
   'figure.post-thumbnail',
   '.widget-area',
   '[class*=ads-widget]',
-  '[class*=relatedposts]',
+  '[class*=relatedposts]'
 ]
 
 for (const selector of selectors) {

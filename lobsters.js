@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         Remove Karma from Lobste.rs
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @description  remove karma scores from Lobste.rs
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://lobste.rs/*
-// @grant        none
-// @updateURL    https://userscripts.kemitchell.com/lobsters.js
+// @grant        BlueOak-1.0.0
 // ==/UserScript==
 
 // Remove user score.

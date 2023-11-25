@@ -19,7 +19,7 @@ const selectors = [
   '.bb-image',
   '.bb-callout',
   '[class*=section-actions]',
-  '[class*=promo-]',
+  '[class*=promo-]'
 ]
 
 for (const selector of selectors) {

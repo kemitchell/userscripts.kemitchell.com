@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         Cleaner Foreign Affairs
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://foreignaffairs.com/*
 // @grant        BlueOak-1.0.0
-// @updateURL    https://userscripts.kemitchell.com/fa.js
 // ==/UserScript==
 
 // Remove "Stay informed" ads.

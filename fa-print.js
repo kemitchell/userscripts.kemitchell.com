@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         Cleaner Foreign Affairs Printing
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  fix type, etc.
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://www.foreignaffairs.com/print/node/*
 // @grant        BlueOak-1.0.0
-// @updateURL    https://userscripts.kemitchell.com/fa-print.js
 // ==/UserScript==
 
 for (const stylesheet of document.styleSheets) {
@@ -18,8 +17,7 @@ for (const stylesheet of document.styleSheets) {
       text.includes('.article-dropcap') &&
       text.includes('font-size') &&
       text.includes('1.4rem')
-    )
-      stylesheet.deleteRule(ruleIndex)
+    ) stylesheet.deleteRule(ruleIndex)
   }
 }
 

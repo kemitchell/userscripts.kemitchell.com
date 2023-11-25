@@ -1,7 +1,11 @@
 // ==UserScript==
-// @name         Reddit
+// @name         Streamline Reddit
+// @version      1.0
 // @namespace    http://tampermonkey.net/
+// @author       Kyle E. Mitchell
+// @homepage     https://userscripts.kemitchell.com
 // @match        *://*.reddit.com/*
+// @grant        BlueOak-1.0.0
 // ==/UserScript==
 
 (function () {

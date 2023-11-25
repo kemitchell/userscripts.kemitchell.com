@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         Nicks Boots
-// @version      1.5
+// @version      1.6
 // @description  remove some elements
 // @namespace    http://tampermonkey.net/
 // @match        https://nicksboots.com/shop/shop-all-boots/*
-// @downloadURL  https://userscripts.kemitchell.com/nicksboots.js
 // ==/UserScript==
 
 (function () {
