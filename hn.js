@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Karma from Hacker News
 // @namespace    http://tampermonkey.net/
-// @version      2.3
+// @version      2.4
 // @description  remove karma scores from Hacker News
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -10,9 +10,11 @@
 
 // Remove user score.
 try {
-  const me = document.getElementById('me')
-  const myKarma = me.nextSibling
-  myKarma.parentNode.removeChild(myKarma)
+  const pagetop = document.getElementById('me').parentNode
+  for (const child of Array.from(pagetop.childNodes)) {
+    if (child.nodeType !== 1) pagetop.removeChild(child)
+    if (child.id !== 'me' && child.id !== 'logout') pagetop.removeChild(child)
+  }
 } catch (error) {
   // Pass.
 }
