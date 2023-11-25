@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Nicks Boots
-// @version      1.6
+// @version      1.7
 // @description  remove some elements
 // @namespace    http://tampermonkey.net/
 // @match        https://nicksboots.com/shop/shop-all-boots/*

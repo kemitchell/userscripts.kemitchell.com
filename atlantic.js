@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         Streamline The Atlantic
 // @namespace    http://tampermonkey.net/
-// @version      0.8
+// @version      0.9
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @match        https://www.theatlantic.com/*
-// @grant        BlueOak-1.0.0
 // ==/UserScript==
 
 setTimeout(() => {

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OED Automatic Login
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  automatically click "Sign In"
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com

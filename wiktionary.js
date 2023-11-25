@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         Streamline Wiktionary
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://ru.wiktionary.org/wiki/*
-// @grant        BlueOak-1.0.0
 // ==/UserScript==
 
 for (const selector of ['#toc']) {

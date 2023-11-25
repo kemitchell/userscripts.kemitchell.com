@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         Remove Karma from Hacker News
 // @namespace    http://tampermonkey.net/
-// @version      2.2
+// @version      2.3
 // @description  remove karma scores from Hacker News
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://news.ycombinator.com/*
-// @grant        BlueOak-1.0.0
 // ==/UserScript==
 
 // Remove user score.

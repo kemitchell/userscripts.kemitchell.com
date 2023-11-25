@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         Streamline Oaklandside
 // @namespace    http://tampermonkey.net/
-// @version      0.8
+// @version      0.9
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @match        https://oaklandside.org/20*/*
-// @grant        BlueOak-1.0.0
 // ==/UserScript==
 
 const selectors = [

@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         Streamline ProPublica
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  remove promo and other cruft
 // @author       Kyle E. Mitchell
 // @match        https://www.propublica.org/article/*
-// @grant        BlueOak-1.0.0
 // ==/UserScript==
 
 const selectors = [
