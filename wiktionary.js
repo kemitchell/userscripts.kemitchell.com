@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Streamline Wiktionary
+// @name         Streamline Russian Wiktionary
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
