@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Холод
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -9,15 +9,11 @@
 // @run-at       document-idle
 // ==/UserScript==
 
-for (const selector of [
+for (const s of [
   '.engb',
   '.sitenav__social',
   '.article__sharing',
   '.article_footer',
   '.article_footer',
   '.site-footer'
-]) {
-  for (const element of Array.from(document.querySelectorAll(selector))) {
-    element.parentNode.removeChild(element)
-  }
-}
+]) document.querySelectorAll(s).forEach(e => e.parentNode.removeChild(e))
