@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Karma from Hacker News
 // @namespace    http://tampermonkey.net/
-// @version      2.5
+// @version      2.6
 // @description  remove karma scores from Hacker News
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -22,4 +22,4 @@ const logout = document.getElementById('logout')
 logout.parentNode.insertBefore(document.createTextNode(' '), logout)
 
 // Remove post scores.
-document.querySelectorAll('.score').forEach((e) => e.parentNode.removeChild(e))
+document.querySelectorAll('.score').forEach(e => { e.style.display = 'none' })
