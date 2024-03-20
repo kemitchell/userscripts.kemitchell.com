@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         USPS Quick Notifications
 // @namespace    http://tampermonkey.net/
-// @version      2.2
+// @version      2.3
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://tools.usps.com/go/TrackConfirmAction.action*
 // ==/UserScript==
 
-let emailLink = null
-let textLink = null
+let emailLink = null;
+let textLink = null;
 
 (() => {
   const wrapper = document.querySelector('.tn-tools-wrapper')
