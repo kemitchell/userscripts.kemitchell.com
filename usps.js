@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         USPS Quick Notifications
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://tools.usps.com/go/TrackConfirmAction.action*
@@ -33,7 +33,7 @@
     const match = matches.iterateNext()
     match.click()
     document.querySelector('#textAll_1').click()
-    document.querySelector('#textUpdatePhoneNumber_1').value = '5107120933'
+    document.querySelector('#textUpdatePhoneNumber_1').value = '510-712-0933'
     document.querySelector('#agreedTextUpdates_1').click()
     document.querySelector('#teuButton_1').click()
   })
