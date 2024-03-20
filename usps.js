@@ -1,15 +1,18 @@
 // ==UserScript==
 // @name         USPS Quick Notifications
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://tools.usps.com/go/TrackConfirmAction.action*
 // ==/UserScript==
 
+let emailLink = null
+let textLink = null
+
 (() => {
   const wrapper = document.querySelector('.tn-tools-wrapper')
-  const newLink = document.createElement('a')
+  const newLink = emailLink = document.createElement('a')
   newLink.appendChild(document.createTextNode('E-Mail Notifications'))
   newLink.addEventListener('click', () => {
     const matches = document.evaluate('//a[contains(., "Text & Email Updates")]', document, null, XPathResult.ANY_TYPE, null)
@@ -20,13 +23,14 @@
     document.querySelector('#emailUpdate_email1_1').value = 'kyle@kemitchell.com'
     document.querySelector('#agreedTextUpdates_1').click()
     document.querySelector('#teuButton_1').click()
+    removeLinks()
   })
   wrapper.appendChild(newLink)
 })();
 
 (() => {
   const wrapper = document.querySelector('.tn-tools-wrapper')
-  const newLink = document.createElement('a')
+  const newLink = textLink = document.createElement('a')
   newLink.appendChild(document.createTextNode('Text Notifications'))
   newLink.addEventListener('click', () => {
     const matches = document.evaluate('//a[contains(., "Text & Email Updates")]', document, null, XPathResult.ANY_TYPE, null)
@@ -36,6 +40,11 @@
     document.querySelector('#textUpdatePhoneNumber_1').value = '510-712-0933'
     document.querySelector('#agreedTextUpdates_1').click()
     document.querySelector('#teuButton_1').click()
+    removeLinks()
   })
   wrapper.appendChild(newLink)
 })();
+
+function removeLinks () {
+  for (const e of [emailLink, textLink]) e.parentNode.removeChild(e)
+}
