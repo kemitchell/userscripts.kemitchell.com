@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Reddit Remove Promoted
-// @version      1.0
+// @version      1.1
 // @namespace    http://tampermonkey.net/
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -8,7 +8,9 @@
 // ==/UserScript==
 
 for (const selector of [
-  '.promoted'
+  '.promoted',
+  '.premium-banner-outer',
+  '.sidebox.create'
 ]) {
   document.querySelectorAll(selector).forEach(e => e.parentNode.removeChild(e))
 }
