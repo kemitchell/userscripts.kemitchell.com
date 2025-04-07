@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         USPS Quick Notifications
+// @description  add links to quickly sign up for delivery notifications
 // @namespace    http://tampermonkey.net/
 // @version      2.3
 // @author       Kyle E. Mitchell
