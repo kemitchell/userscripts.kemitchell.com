@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Clean Up MIT Technology Review
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  remove inserts and other cruft
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 for (const selector of [
-  '.piano__post_body',
+  '.adUnit',
   'aside[class^=sidebar__wrapper--]',
   'aside.related__wrap',
   '#piano__body-footer',
