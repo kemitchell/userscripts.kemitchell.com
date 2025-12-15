@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Streamline Reddit
-// @version      1.2
+// @version      1.3
 // @namespace    http://tampermonkey.net/
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -12,5 +12,5 @@ for (const selector of [
   '.premium-banner-outer',
   '.redesign-beta-optin'
 ]) {
-  document.querySelectorAll(selector).forEach(e => e.parentNode.removeChild(e))
+  document.querySelectorAll(selector).forEach(e => e.remove())
 }

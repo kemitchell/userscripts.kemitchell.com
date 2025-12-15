@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Karma from Hacker News
 // @namespace    http://tampermonkey.net/
-// @version      2.6
+// @version      2.7
 // @description  remove karma scores from Hacker News
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -14,7 +14,7 @@ for (const child of Array.from(pagetop.childNodes)) {
   if (
     child.nodeType !== 1 ||
     (child.id !== 'me' && child.id !== 'logout')
-  ) child.parentNode.removeChild(child)
+  ) child.remove()
 }
 
 // Add space between handle and logout link.

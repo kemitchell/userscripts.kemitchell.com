@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Cleaner Foreign Affairs
 // @namespace    http://tampermonkey.net/
-// @version      2.3
+// @version      2.4
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -12,7 +12,7 @@
 document
   .querySelectorAll('.article-newsletter-signup--container')
   .forEach((e) => {
-    e.parentNode.removeChild(e)
+    e.remove()
   })
 
 // Dismiss cookie notice.

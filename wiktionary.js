@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Russian Wiktionary
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.6
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -10,7 +10,7 @@
 
 for (const selector of ['#toc']) {
   for (const element of Array.from(document.querySelectorAll(selector))) {
-    element.parentNode.removeChild(element)
+    element.remove()
   }
 }
 
