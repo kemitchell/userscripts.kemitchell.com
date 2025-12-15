@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Clean Up MIT Technology Review
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  remove inserts and other cruft
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -18,4 +18,4 @@ for (const selector of [
   'div[class^=deepDive__wrapper--]',
   'div[class^=contentArticleHeader] div[class^=image__wrapper--]', // hero images
   'div[class^=footer__storyCard--]'
-]) document.querySelectorAll(selector).forEach(e => e.parentNode.removeChild(e))
+]) document.querySelectorAll(selector).forEach(e => e.remove())
