@@ -11,6 +11,7 @@
 for (const selector of [
   '.PageListRightRailA',
   '.AudioEnhancement',
+  '.Page-below',
   '.ap-comments',
   '.app-button-container',
   '.Advertisement'
