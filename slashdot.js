@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Slashdot
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  remove some elements
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
@@ -10,6 +10,7 @@
 // ==/UserScript==
 
 for (const selector of [
+  '#slashboxes',
   '.nav-social',
   '.comment-bubble'
 ]) {
