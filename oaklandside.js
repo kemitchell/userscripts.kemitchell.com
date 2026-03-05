@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Oaklandside
 // @namespace    http://tampermonkey.net/
-// @version      0.10
+// @version      0.11
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @match        https://oaklandside.org/20*/*
@@ -11,6 +11,8 @@ const selectors = [
   '.sharedaddy',
   '#colophon',
   '.highlight-menu-contain',
+  'aside:has(.newspaper-popup)',
+  'aside.scaip',
   '.social-nav-contain',
   '.author-avatar',
   'figure.post-thumbnail',
