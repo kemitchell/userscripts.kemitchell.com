@@ -12,7 +12,7 @@ const selectors = [
   '#colophon',
   '.highlight-menu-contain',
   'aside:has(.newspaper-popup)',
-  'aside.scaip',
+  '.scaip',
   '.social-nav-contain',
   '.author-avatar',
   'figure.post-thumbnail',
