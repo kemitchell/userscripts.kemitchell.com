@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Streamline Oaklandside
 // @namespace    http://tampermonkey.net/
-// @version      0.12
+// @version      0.13
 // @description  remove cruft
 // @author       Kyle E. Mitchell
 // @match        https://oaklandside.org/20*/*
@@ -15,7 +15,6 @@ const selectors = [
   '.scaip',
   '.social-nav-contain',
   '.author-avatar',
-  'figure.post-thumbnail',
   '.widget-area',
   '[class*=ads-widget]',
   '[class*=relatedposts]'
