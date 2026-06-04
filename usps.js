@@ -2,10 +2,11 @@
 // @name         USPS Quick Notifications
 // @description  add links to quickly sign up for delivery notifications
 // @namespace    http://tampermonkey.net/
-// @version      2.3
+// @version      2.4
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://tools.usps.com/go/TrackConfirmAction.action*
+// @match        https://tools.usps.com/tracking/*
 // ==/UserScript==
 
 let emailLink = null;
