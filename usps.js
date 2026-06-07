@@ -2,7 +2,7 @@
 // @name         USPS Quick Notifications
 // @description  add links to quickly sign up for delivery notifications
 // @namespace    http://tampermonkey.net/
-// @version      3.1
+// @version      3.2
 // @author       Kyle E. Mitchell
 // @homepage     https://userscripts.kemitchell.com
 // @match        https://tools.usps.com/tracking/*
@@ -19,11 +19,11 @@ let textLink = null;
     const matches = document.evaluate('//a[contains(., "Text & Email Updates")]', document, null, XPathResult.ANY_TYPE, null)
     const match = matches.iterateNext()
     match.click()
-    document.querySelector('emailOA_0').click()
-    document.querySelector('emailUpdate_name1_0').value = 'Kyle Mitchell'
-    document.querySelector('emailUpdate_email1_0').value = 'kyle@kemitchell.com'
-    document.querySelector('agreedTextUpdates_0').click()
-    document.querySelector('teuButton_0').click()
+    document.querySelector('#emailOA_0').click()
+    document.querySelector('#emailUpdate_name1_0').value = 'Kyle Mitchell'
+    document.querySelector('#emailUpdate_email1_0').value = 'kyle@kemitchell.com'
+    document.querySelector('#agreedTextUpdates_0').click()
+    document.querySelector('#teuButton_0').click()
     removeLinks()
   })
   wrapper.appendChild(newLink)
@@ -37,10 +37,10 @@ let textLink = null;
     const matches = document.evaluate('//a[contains(., "Text & Email Updates")]', document, null, XPathResult.ANY_TYPE, null)
     const match = matches.iterateNext()
     match.click()
-    document.querySelector('textOA_0').click()
-    document.querySelector('textUpdatePhoneNumber_0').value = '510-712-0933'
-    document.querySelector('agreedTextUpdates_0').click()
-    document.querySelector('teuButton_0').click()
+    document.querySelector('#textOA_0').click()
+    document.querySelector('#textUpdatePhoneNumber_0').value = '510-712-0933'
+    document.querySelector('#agreedTextUpdates_0').click()
+    document.querySelector('#teuButton_0').click()
     removeLinks()
   })
   wrapper.appendChild(newLink)
