@@ -8,8 +8,8 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // ==/UserScript==
 
-(function() {
-  'use strict';
+(function () {
+  'use strict'
 
   const substrings = ['MS NOW', '@msnow', 'TMZ']
   for (const e of document.querySelectorAll('.thing .domain a[href]')) {

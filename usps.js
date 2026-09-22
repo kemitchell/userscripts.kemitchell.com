@@ -8,8 +8,8 @@
 // @match        https://tools.usps.com/tracking/*
 // ==/UserScript==
 
-let emailLink = null;
-let textLink = null;
+let emailLink = null
+let textLink = null
 
 (() => {
   const wrapper = document.querySelector('.tn-tools-wrapper')
@@ -27,7 +27,7 @@ let textLink = null;
     removeLinks()
   })
   wrapper.appendChild(newLink)
-})();
+})()
 
 (() => {
   const wrapper = document.querySelector('.tn-tools-wrapper')
@@ -44,7 +44,7 @@ let textLink = null;
     removeLinks()
   })
   wrapper.appendChild(newLink)
-})();
+})()
 
 function removeLinks () {
   for (const e of [emailLink, textLink]) e.parentNode.removeChild(e)
