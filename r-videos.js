@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         /r/videos Fader
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  fade out entries from disfavored sources
 // @author       Kyle E. Mitchell
 // @match        https://old.reddit.com/r/videos/*
@@ -9,9 +9,9 @@
 // ==/UserScript==
 
 (() => {
-  const substrings = ['MS NOW', '@msnow', 'TMZ']
+  const substrings = ['MS NOW', '@msnow', 'TMZ', 'youtube.com/@CNN'].map(t => t.toLowerCase())
   for (const e of document.querySelectorAll('.thing .domain a[href]')) {
-    if (substrings.some(s => e.innerText.includes(s))) {
+    if (substrings.some(s => e.innerText.toLowerCase().includes(s))) {
       e.closest('.thing').style.opacity = 0.3
     }
   }
