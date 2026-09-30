@@ -9,7 +9,18 @@
 // ==/UserScript==
 
 (() => {
-  const substrings = ['MS NOW', '@msnow', 'TMZ', 'youtube.com/@CNN'].map(t => t.toLowerCase())
+  const substrings = [
+    'MS NOW',
+    '@msnow',
+    'TMZ',
+    'youtube.com/@CNN',
+    '@DwarkeshPatel',
+    '@NBCNews',
+    '@ForbesBreakingNews',
+    'Fox News',
+    '@NPR',
+    '@ZeihanonGeopolitics'
+  ].map(t => t.toLowerCase())
   for (const e of document.querySelectorAll('.thing .domain a[href]')) {
     if (substrings.some(s => e.innerText.toLowerCase().includes(s))) {
       e.closest('.thing').style.opacity = 0.3
