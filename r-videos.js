@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         /r/videos Fader
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  fade out entries from disfavored sources
 // @author       Kyle E. Mitchell
 // @match        https://old.reddit.com/r/videos/*
