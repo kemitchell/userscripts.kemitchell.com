@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         /r/videos Fader
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  fade out entries from disfavored sources
 // @author       Kyle E. Mitchell
 // @match        https://old.reddit.com/r/videos/*
@@ -16,6 +16,7 @@
     'youtube.com/@CNN',
     '@DwarkeshPatel',
     '@NBCNews',
+    'Jamelle Bouie',
     '@ForbesBreakingNews',
     'Fox News',
     '@NPR',
